@@ -1,17 +1,17 @@
 /*
 Colors used
-Primary Color (Black): #151515;
-Second Color (White): #FFFFFF;
-Tertiary Color (Green): #145348;
+Primary Color (Blue): #6476A3;
+Background Color (Tan): #F0EDE4;
+Tertiary Color (Black): #151515;
 */
 body {
-  background-color: #FFFFFF;
+  background-color: #F0EDE4;
   font-family: 'Quicksand', sans-serif;
   font-family: 'Roboto Mono', monospace;
   font-size: 14px;
   font-weight: 300;
   line-weight: 1.6
-  color: #151515;
+  color: #6476A3;
 }
 
 h1, h2, h3, h4 {
@@ -46,10 +46,19 @@ img{
 Buttons
 */
 a{
-  color: #151515;
+  color: #6476A3;
   text-decoration: none;
 }
-a:hover{
-  color:#145348
-  text-decoration: none;
+a:visited,
+a:focus {
+  color:#151515
+}
+a:hover,
+a:focus {
+  color:#151515
+  text-decoration: underline;
+}
+a:active,
+a:focus {
+  color:#151515
 }
