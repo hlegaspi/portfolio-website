@@ -2,8 +2,8 @@
 Colors used
 Primary Color (Black): #151515;
 Second Color (White): #FFFFFF;
+Tertiary Color (Green): #145348;
 */
-
 body {
   background-color: #FFFFFF;
   font-family: 'Quicksand', sans-serif;
@@ -36,4 +36,20 @@ h4{
 p{
   font-family: 'Quicksand', sans-serif;
   font-size: 1.2em
+}
+
+img{
+  width:100%
+}
+
+/*
+Buttons
+*/
+a{
+  color: #151515;
+  text-decoration: none;
+}
+a:hover{
+  color:#145348
+  text-decoration: none;
 }
