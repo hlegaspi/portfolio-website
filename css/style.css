@@ -63,7 +63,7 @@ a:focus {
 }
 a:hover,
 a:focus {
-  color: #808080;
+  color: #ccccff;
   text-decoration: underline;
 }
 a:active,
@@ -86,5 +86,6 @@ a:focus {
 }
 .button:hover {
   background-color: #ccccff;
+  color: #151515;
   text-decoration: none;
 }
