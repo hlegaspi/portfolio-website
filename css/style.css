@@ -5,6 +5,8 @@ Secondary Color (White): #ffffff;
 Accent Color 1 (Periwinkle): #ccccff
 Accent Color 2 (Gray): #808080
 */
+
+
 body {
   background-color: #ffffff;
   font-family: 'Quicksand', sans-serif;
@@ -15,6 +17,7 @@ body {
   color: #151515;
 }
 
+/* Headings */
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -34,18 +37,18 @@ h4{
   font-size: 1.35em;
   font-weight: 300
 }
+/* Paragraphs */
 p{
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.2em
+  font-size: 1.2em;
+  font-weight: 300
 }
 
 img{
   width:100%
 }
 
-/*
-Hyperlinks
-*/
+/* Hyperlinks */
 a{
   color: #151515;
   text-decoration: none;
@@ -64,15 +67,14 @@ a:focus {
   color: #808080
 }
 
-/*
-Buttons (Add this at the end)
-*/
+/* Buttons (Add this at the end) */
 .button{
   display: inline-block;
   border: 1px solid #151515;
   background-color: #ffffff;
   color: #151515;
   font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
   font-weight: 300;
   padding: 15px;
   border-radius: 30px;
