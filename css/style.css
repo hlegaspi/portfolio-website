@@ -66,6 +66,65 @@ a:active,
 a:focus {
   color: #808080;
 }
+/* Header Stylings */
+header{
+  background-color: #ffffff;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+main {
+  padding-top: 200px;
+}
+/* Layout Styling */
+.container{
+  padding: 0 15px;
+}
+
+.row{
+  margin: 25px 0;
+}
+
+#hero h1{
+  text-align: center;
+}
+
+.logo{
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+/* Navigation */
+nav{
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li{
+  display: inline-block;
+}
+
+nav > ul > li > a{
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #151515;
+}
+
+#hero{
+  background-color: #ccccff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
 
 /* Buttons (Add this at the end) */
 .button{
