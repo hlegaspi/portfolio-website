@@ -6,7 +6,11 @@ Accent Color 1 (Periwinkle): #ccccff;
 Accent Color 2 (Gray): #808080;
 */
 
+*{
+  box-sizing: border-box;
+}
 
+/* Text Stylings */
 body {
   background-color: #ffffff;
   font-family: 'Quicksand', sans-serif;
@@ -17,7 +21,6 @@ body {
   color: #151515;
 }
 
-/* Headings */
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -37,15 +40,113 @@ h4{
   font-size: 1.35em;
   font-weight: 300;
 }
-/* Paragraphs */
+
 p{
   font-family: 'Quicksand', sans-serif;
   font-size: 1.2em;
   font-weight: 300;
 }
 
+/* Images & Logos */
 img{
   width:100%;
+}
+
+.logo{
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+#about .profile{
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content .contentimg{
+  max-width: 750px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact .social{
+  max-width: 55px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Layout Stylings */
+
+  /* Header Stylings */
+header{
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+  padding: 10px 0;
+}
+
+  /* Body (Content) Stylings */
+#title{
+  text-align: center;
+}
+
+#content h2{
+  text-align: center;
+}
+
+#content .process{
+  border-top: 1px solid #808080;
+}
+
+#content .conclusion{
+  border-bottom: 1px solid #808080;
+}
+
+  /* Footer Stylings */
+#contact {
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+  padding: 10px 0;
+}
+#contact {
+  display: inline-block;
+  width:100%;
+}
+
+  /* Other Layout Stylings */
+main {
+  padding-top: 30px;
+}
+
+.container{
+  padding: 0 15px;
+}
+
+.row{
+  margin: 25px 0;
+}
+
+#work .row{
+  padding-bottom: 25px;
+  border-bottom: 1px solid #808080;
+}
+
+#hero{
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1{
+  text-align: center;
+}
+
+#hero p{
+  text-align: center;
 }
 
 /* Hyperlinks */
@@ -65,36 +166,6 @@ a:focus {
 a:active,
 a:focus {
   color: #808080;
-}
-/* Header Stylings */
-header{
-  background-color: #ffffff;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  padding: 10px 0;
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-}
-
-main {
-  padding-top: 200px;
-}
-/* Layout Styling */
-.container{
-  padding: 0 15px;
-}
-
-.row{
-  margin: 25px 0;
-}
-
-#hero h1{
-  text-align: center;
-}
-
-.logo{
-  max-width: 250px;
-  margin-top: 10px;
 }
 
 /* Navigation */
@@ -119,13 +190,6 @@ nav > ul > li > a{
   color: #151515;
 }
 
-#hero{
-  background-color: #ccccff;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-
 /* Buttons (Add this at the end) */
 .button{
   display: inline-block;
@@ -139,6 +203,7 @@ nav > ul > li > a{
   border-radius: 30px;
   transition: 0.2s opacity;
 }
+
 .button:hover {
   background-color: #ccccff;
   color: #151515;
