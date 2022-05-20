@@ -216,6 +216,18 @@ nav > ul > li > a{
   opacity: 0.8;
 }
 
+#work .button{
+  position: relative;
+  left: 35%;
+  right: 65%;
+}
+
+#about .button{
+  position: relative;
+  left: 33%;
+  right: 67%;
+}
+
 /** Animations **/
 
 @keyframes person-move{
@@ -258,6 +270,7 @@ Medium devices (640px and larger)
   }
   #about-page h3{
     margin-top: 0;
+    white-space: nowrap;
   }
 
 }
@@ -276,6 +289,14 @@ Large devices (1024px and larger)
     width: 40%;
   }
 
+  .row-lg{
+    clear: both;
+    display: table;
+    position: relative;
+    left: 15%;
+    right: 85%;
+    }
+    
   .container{
     max-width: 1200px;
     margin-left: auto;
