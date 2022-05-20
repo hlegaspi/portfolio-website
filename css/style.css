@@ -217,9 +217,10 @@ nav > ul > li > a{
 }
 
 /** Animations **/
+
 @keyframes person-move{
-  from {transform: translate(120px,-50px);}
-  to {transform: translate(250px,-60px);}
+  from {transform: translate(30px,-120px);}
+  to {transform: translate(150px,-150px);}
 }
 
 .person{
