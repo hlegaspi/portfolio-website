@@ -149,6 +149,9 @@ main {
   text-align: center;
 }
 
+#hero span{
+  display: block;
+}
 /* Hyperlinks */
 a{
   color: #151515;
@@ -191,6 +194,7 @@ nav > ul > li > a{
 }
 
 /* Buttons (Add this at the end) */
+
 .button{
   display: inline-block;
   border: 1px solid #151515;
@@ -201,11 +205,85 @@ nav > ul > li > a{
   font-weight: 300;
   padding: 15px;
   border-radius: 30px;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property; opacity;
 }
 
 .button:hover {
   background-color: #ccccff;
   color: #151515;
   text-decoration: none;
+  opacity: 0.8;
+}
+
+/** Animations **/
+@keyframes person-move{
+  from {transform: translate(120px,-50px);}
+  to {transform: translate(250px,-60px);}
+}
+
+.person{
+  animation: 10s person-move infinite alternate linear;
+}
+/* Media Queries */
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header{
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav{
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-md-6{
+    width: 50%;
+  }
+  [class*="col-"]{
+    float: left;
+    padding: 0px 10px;
+  }
+  .row::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #about h2{
+    text-align: center;
+  }
+  #about-page h3{
+    margin-top: 0;
+  }
+
+}
+
+/* ==============================
+Large devices (1024px and larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  body{
+    font-size: 16px;
+  }
+  .col-lg-7{
+    width: 60%;
+  }
+  .col-lg-5{
+    width: 40%;
+  }
+
+  .container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px and larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
