@@ -83,7 +83,7 @@ img{
 header{
   background-color: #ffffff;
   position: relative;
-  padding: 10px 0;
+  padding: 10px 0 4px;
 }
 
   /* Body (Content) Stylings */
@@ -117,7 +117,7 @@ header{
 
   /* Other Layout Stylings */
 main {
-  padding-top: 30px;
+  padding-top: 56px;
 }
 
 .container{
