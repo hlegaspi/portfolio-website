@@ -116,10 +116,6 @@ header{
 }
 
   /* Other Layout Stylings */
-main {
-  padding-top: 56px;
-}
-
 .container{
   padding: 0 15px;
 }
@@ -184,8 +180,55 @@ nav > ul > li > a{
   color: #151515;
 }
 
-/* Buttons (Add this at the end) */
+/** Javascript-related **/
+.navtoggle li:not(:last-child) {
+  display: none;
+}
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding 10px 0;
+  border-top: 1px solid #151515;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+main {
+  padding-top: 56px;
+}
+
+/** Animations **/
+@keyframes person-move{
+  from {transform: translate(30px,-120px);}
+  to {transform: translate(150px,-150px);}
+}
+
+.person{
+  animation: 10s person-move infinite alternate linear;
+}
+
+/* Buttons (Add this at the end) */
 .button{
   display: inline-block;
   border: 1px solid #151515;
@@ -219,47 +262,7 @@ nav > ul > li > a{
   right: 67%;
 }
 
-/** Animations **/
 
-@keyframes person-move{
-  from {transform: translate(30px,-120px);}
-  to {transform: translate(150px,-150px);}
-}
-
-.person{
-  animation: 10s person-move infinite alternate linear;
-}
-
-/** Javascript-related **/
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
-}
-
-.navtoggle.responsive li {
-  display: block;
-  padding 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
-}
-
-.navtoggle.responsive nav {
-  padding 24px 0 0;
-}
-
-.navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
-}
 /* Media Queries */
 
 /* ==============================
