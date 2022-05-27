@@ -53,7 +53,7 @@ img{
 }
 
 .logo{
-  max-width: 250px;
+  max-width: 150px;
   margin-top: 10px;
 }
 
@@ -272,6 +272,9 @@ Medium devices (640px and larger)
     margin-top: 0;
     white-space: nowrap;
   }
+  .logo{
+    max-width: 225px;
+  }
 
 }
 
@@ -296,7 +299,7 @@ Large devices (1024px and larger)
     left: 15%;
     right: 85%;
     }
-    
+
   .container{
     max-width: 1200px;
     margin-left: auto;
