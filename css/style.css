@@ -201,7 +201,7 @@ nav > ul > li > a{
   display: block;
 }
 .navtoggle.responsive nav {
-  padding 24px 0 0;
+  padding: 24px 0 0;
 }
 
 .navtoggle.responsive li {
@@ -239,7 +239,7 @@ main {
   padding: 15px;
   border-radius: 30px;
   transition-duration: 0.2s;
-  transition-property; opacity;
+  transition-property: opacity;
 }
 
 .button:hover {
