@@ -84,8 +84,9 @@ img {
   display: inline-block;
 }
 
-.animationpic {
-  width: 25%;
+#work .animationpic {
+  width: 100%;
+  max-width: 300px;
 }
 
 /* Layout Stylings */
