@@ -267,9 +267,7 @@ main {
 }
 
 #work .button {
-  position: relative;
-  left: 35%;
-  right: 65%;
+  text-align: center;
 }
 
 #about .button {
