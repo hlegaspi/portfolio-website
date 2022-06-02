@@ -115,6 +115,10 @@ header {
   border-bottom: 1px solid #808080;
 }
 
+#about .intro {
+  text-align: center;
+}
+
 /* Footer Stylings */
 #contact {
   background-color: #fff;
@@ -160,6 +164,10 @@ header {
 
 #hero span {
   display: block;
+}
+
+.intro p {
+  text-align: left;
 }
 
 /* Hyperlinks */
@@ -275,12 +283,6 @@ main {
   position: relative;
   left: 35%;
   right: 65%;
-}
-
-#about .button {
-  position: relative;
-  left: 33%;
-  right: 67%;
 }
 
 /* Media Queries */
