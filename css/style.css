@@ -77,15 +77,17 @@ img {
   margin-right: auto;
 }
 
+#content .video {
+  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #contact .social {
   max-width: 55px;
   text-align: center;
   display: inline-block;
-}
-
-#work .animationpic {
-  width: 100%;
-  max-width: 500px;
 }
 
 /* Layout Stylings */
@@ -168,13 +170,6 @@ header {
 
 .intro p {
   text-align: left;
-}
-
-#content .prototype {
-  width: 45%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Hyperlinks */
@@ -394,6 +389,13 @@ Medium devices (640px and larger)
     max-width: 225px;
   }
 
+  #content .video {
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   nav > ul > li {
     display: inline-block;
   }
@@ -408,10 +410,6 @@ Medium devices (640px and larger)
 
   nav > ul {
     margin: 1em 0;
-  }
-
-  #content .prototype {
-    width: 60%;
   }
 
   .button a {
@@ -456,8 +454,11 @@ Large devices (1024px and larger)
     margin-right: auto;
   }
 
-  #content .prototype {
-    width: 80%;
+  #content .video {
+    max-width: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .button a {
