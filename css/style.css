@@ -13,9 +13,10 @@ Accent Color 2 (Gray): #808080;
 /* Text Stylings */
 body {
   background-color: #fff;
-  font-family: 'Outfit', sans-serif;
-  font-size: 18px;
-  font-weight: 200;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  font-weight: 300;
   line-height: 1.6;
   color: #151515;
 }
@@ -48,9 +49,9 @@ h4 {
 }
 
 p {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.2em;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 /* Images & Logos */
@@ -77,17 +78,15 @@ img {
   margin-right: auto;
 }
 
-#content .video {
-  max-width: 400px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #contact .social {
   max-width: 55px;
   text-align: center;
   display: inline-block;
+}
+
+#work .animationpic {
+  width: 100%;
+  max-width: 500px;
 }
 
 /* Layout Stylings */
@@ -139,13 +138,12 @@ header {
 }
 
 .row {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 25px 0;
 }
 
 #work .row {
   padding-bottom: 25px;
+  border-bottom: 1px solid #808080;
 }
 
 #hero {
@@ -172,20 +170,27 @@ header {
   text-align: left;
 }
 
+#content .prototype {
+  width: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Hyperlinks */
 a {
-  color: #282828;
+  color: #151515;
   text-decoration: none;
 }
 
 a:visited,
 a:focus {
-  color: #282828;
+  color: #151515;
 }
 
 a:hover,
 a:focus {
-  color: #544AC6;
+  color: #ccf;
+  text-decoration: underline;
 }
 
 a:active,
@@ -198,7 +203,7 @@ nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: center;
 }
 
@@ -259,87 +264,31 @@ main {
 }
 
 /* Buttons (Add this at the end) */
-
-/* hover image button */
-
-.imagebutton {
-  position: relative;
-  margin-top: 50px;
-  height: 300px;
-  max-width: 500px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-  transition: background 0.5s ease;
-}
-
-.imagebutton:hover .overlay {
-  display: block;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.img {
-  position: absolute;
-  width: 500px;
-  height: 300px;
-  left: 0;
-}
-
-.title {
-  position: absolute;
-  width: 500px;
-  left: 0;
-  top: 120px;
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  z-index: 1;
-  transition: top 0.5s ease;
-}
-
-.imagebutton: hover .title {
-  top: 90px;
-}
-
 .button {
-  position: absolute;
-  width: 500px;
-  left: 0;
-  top: 120px;
-  text-align: center;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 0.35s ease;
+  display: inline-block;
+  border: 1px solid #151515;
+  background-color: #fff;
+  color: #151515;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  padding: 15px;
+  border-radius: 30px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
-.button a {
-  width: 200px;
-  padding: 12px 48px;
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  z-index: 1;
+.button:hover {
+  background-color: #ccf;
+  color: #151515;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
-.imagebutton:hover .button {
-  opacity: 1;
-}
-
-#work .container {
-  display: grid;
+#work .button {
+  position: relative;
+  left: 35%;
+  right: 65%;
 }
 
 /* Media Queries */
@@ -361,8 +310,6 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   [class*="col-"] {
@@ -389,13 +336,6 @@ Medium devices (640px and larger)
     max-width: 225px;
   }
 
-  #content .video {
-    max-width: 600px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   nav > ul > li {
     display: inline-block;
   }
@@ -412,15 +352,8 @@ Medium devices (640px and larger)
     margin: 1em 0;
   }
 
-  .button a {
-    width: 100px;
-    padding: 12px 48px;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    z-index: 1;
+  #content .prototype {
+    width: 60%;
   }
 }
 
@@ -429,15 +362,15 @@ Large devices (1024px and larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .col-lg-7 {
-    width: 50%;
+    width: 60%;
   }
 
   .col-lg-5 {
-    width: 50%;
+    width: 40%;
   }
 
   .row-lg {
@@ -454,22 +387,7 @@ Large devices (1024px and larger)
     margin-right: auto;
   }
 
-  #content .video {
-    max-width: 750px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  #content .prototype {
+    width: 80%;
   }
-
-  .button a {
-    width: 200px;
-    padding: 12px 48px;
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    z-index: 1;
-  }
-
 }
